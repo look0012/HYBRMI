@@ -24,12 +24,30 @@ The model also shows high cross-dataset consistency, highlighting its notable re
 
 ## Installation
 
-Ensure you have Python 3.9 installed. Install the required dependencies using the following commands:
+Ensure you have Python 3.9 installed.
+- **Software Versions**
+
+Key dependencies with version specifications:
 
 ```bash
-pip install gensim==4.3.3
-pip install keras==2.14.0
-pip install numpy==1.23.5
-pip install pandas==2.0.3
-pip install scipy==1.10.1
-pip install tensorflow==2.14.0
+- PyTorch == 2.0.1
+- TensorFlow == 2.14.0
+- Transformers == 4.41.2
+- Keras == 2.14.0
+- PyTorch Geometric == 2.5.3
+- CUDA Toolkit == 11.8
+- NumPy == 1.23.5
+- SciPy == 1.10.1
+- Pandas == 2.0.3
+- Scikit-learn == 1.3.0
+- XGBoost == 2.0.3
+- LightGBM == 4.4.0
+- SpaCy == 3.0.0
+- Tokenizers == 0.19.1
+- Gensim == 4.3.3
+- Jieba == 0.42.1
+- Biopython == 1.83
+- Biomart == 0.9.2
+- Matplotlib == 3.4.3
+- Seaborn == 0.13.2
+- Plotly == 5.9.0
