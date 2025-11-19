@@ -1,10 +1,9 @@
-# GWDMTI
+# HybRMI
 
 ## Overview
 
-MicroRNA (miRNA) interactions with messenger RNA (mRNA) are essential for various biological processes, and accurately predicting these interactions is crucial for understanding their mechanisms. Traditional experimental methods often face limitations, making it increasingly important to develop robust predictive models for identifying potential miRNA targets. Current methods tend to rely solely on potential miRNA target sites and do not fully utilize the entire mRNA sequence, which can lead to a loss of crucial features.
+MicroRNAs (miRNAs) interact with messenger RNAs (mRNAs) to regulate key biological processes, with disruptions often linked to diseases such as cancer and neurodegenerative disorders. Predicting these interactions computationally is essential, as experimental validation is labor-intensive and limited in scale. However, many models prioritize binding sites over full sequence context and require manual feature engineering, risking the loss of critical information. We propose HybRMI, a hybrid GraRep-RNA2vec fusion framework that addresses these gaps by integrating RNA sequence embeddings with network topology for enhanced miRNA-mRNA interaction prediction. RNA2vec pre-trains vector representations from complete sequences, which are refined via convolutional neural networks and bidirectional gated recurrent units for deep feature extraction. GraRep complements this by embedding graph-based structural insights, with a deep neural network fusing the modalities for robust classification. Extending beyond core prediction, HybRMI's efficient design supports potential applications in consumer electronics, enabling personalized healthcare analytic through seamless analysis of distributed biomolecular data from devices like wearables and smartphones. This could empower real-time insights into gene regulation for individualized risk monitoring and interventions. On the benchmark dataset, HybRMI achieves 85.89% accuracy with 0.9389 AUC under five-fold cross-validation, outperforming benchmarks. Ablation experiments and case studies affirm the contributions of its modules. HybRMI thus advances bioinformatics tools while offering a pathway to intelligent consumer health systems. 
 
-To address these limitations, we introduce GWDMTI, a novel deep learning model designed to enhance the prediction of miRNA-target mRNA interactions. GWDMTI leverages both node and sequence features of miRNA and mRNA, aiming to improve predictive performance by overcoming the shortcomings of existing methods.
 
 ## Methodology
 
@@ -15,7 +14,7 @@ To address these limitations, we introduce GWDMTI, a novel deep learning model d
 
 ## Performance
 
-The GWDMTI model has demonstrated robust performance on the MTIS-9214 dataset, achieving:
+The HybRMI model has demonstrated robust performance on the MTIS-9214 dataset, achieving:
 - **Accuracy**: 85.892%
 - **AUC (Area Under Curve)**: 0.9389
 - **AUPR (Area Under Precision-Recall Curve)**: 0.9392
@@ -51,3 +50,4 @@ Key dependencies with version specifications:
 - Matplotlib == 3.4.3
 - Seaborn == 0.13.2
 - Plotly == 5.9.0
+
